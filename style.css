@@ -26,6 +26,11 @@ h1 {
     font-size: 48px;
     letter-spacing: 8px;
     font-weight: normal;
+}.site-logo {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
 }
 
 .tagline {
