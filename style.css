@@ -265,4 +265,8 @@ section p {
 #stories h3,
 #stories p {
     text-align: left;
+}.story-text p {
+    text-align: justify;
+}.story-text p {
+    text-align: justify !important;
 }
