@@ -331,4 +331,6 @@ section p {
 }
 .story-page .story-divider {
     text-align: center !important;
+}.story-page p.story-divider {
+    text-align: center !important;
 }
