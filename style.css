@@ -329,3 +329,6 @@ section p {
 .story-text p.scene-break {
     text-align: center;
 }
+.story-page .story-divider {
+    text-align: center !important;
+}
