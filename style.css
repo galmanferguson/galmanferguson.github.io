@@ -251,7 +251,7 @@ section p {
 }
 
 .story-divider {
-    text-align: center;
+    text-align: center !important;
     margin: 55px 0;
     color: #666666;
     font-family: Georgia, "Times New Roman", serif;
