@@ -280,8 +280,15 @@ section p {
     letter-spacing: 4px;
     font-size: 20px;
 }.contact-image {
-    width: 300px;
+    width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto 45px;
+    margin: 0 auto;
+}
+}.contact-image + h2 {
+    margin-top: 0;
+}.contact-image + h2 {
+    margin-top: -25px;
+}.contact-title {
+    margin-top: 0;
 }
