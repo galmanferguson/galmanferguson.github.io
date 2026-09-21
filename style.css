@@ -269,4 +269,19 @@ section p {
     text-align: justify;
 }.story-text p {
     text-align: justify !important;
+}.story-text p {
+    text-align: justify;
+}
+
+.coming-soon {
+    text-align: center !important;
+    color: #777777;
+    font-family: Arial, sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+}.contact-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 45px;
 }
