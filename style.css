@@ -317,4 +317,14 @@ section p {
     height: auto !important;
     display: block;
     margin: 0 auto;
+}.story-page .intro {
+    text-align: justify;
+}
+
+.story-text p {
+    text-align: justify;
+}
+
+.story-text p.scene-break {
+    text-align: center;
 }
