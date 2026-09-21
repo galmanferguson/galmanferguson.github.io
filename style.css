@@ -338,3 +338,10 @@ section p {
 }.story-page p.story-divider {
     text-align: center !important;
 }
+.story-page .story-title {
+    text-align: center !important;
+}
+
+.story-page .story-divider {
+    text-align: center !important;
+}
