@@ -221,6 +221,7 @@ a:hover {
 }.story-text {
     max-width: 700px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 .story-text p {
