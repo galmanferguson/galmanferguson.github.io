@@ -886,4 +886,118 @@ margin: 40px auto;
         opacity: 1;
         transform: translateY(20px);
     }
+}#invertButton {
+    display: block;
+    margin: 0 0 25px auto;
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid #555555;
+    color: #999999;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#invertButton:hover {
+    color: #ffffff;
+    border-color: #888888;
+}body.inverted {
+    background: #ffffff;
+    color: #222222;
+}
+
+body.inverted header {
+    border-color: #cccccc;
+}
+
+body.inverted h1,
+body.inverted h2,
+body.inverted h3 {
+    color: #222222;
+}
+
+body.inverted a {
+    color: #222222;
+}
+
+body.inverted .tagline {
+    color: #555555;
+}
+
+body.inverted nav a {
+    color: #222222;
+}
+
+body.inverted section {
+    border-color: #cccccc;
+}
+
+body.inverted .intro {
+    color: #444444;
+}
+
+body.inverted article p {
+    color: #444444;
+}
+
+body.inverted .publication {
+    color: #666666 !important;
+}
+
+body.inverted footer {
+    border-color: #cccccc;
+    color: #666666;
+}
+
+body.inverted .about-mollerhatte,
+body.inverted .publications-section,
+body.inverted .news-section,
+body.inverted .copyright-section {
+    background: #eeeeee;
+    border-color: #cccccc;
+}
+
+body.inverted .mollerhatte-quote {
+    color: #666666 !important;
+}
+
+body.inverted .story-search input,
+body.inverted .story-search button {
+    background: #eeeeee;
+    border-color: #bbbbbb;
+    color: #222222;
+}
+
+body.inverted .story-search input::placeholder {
+    color: #777777;
+}
+
+body.inverted .homepage-narration {
+    border-color: #cccccc;
+}
+
+body.inverted .scroll-indicator {
+    color: #222222;
+}
+
+body.inverted .big-arrow {
+    background: #222222;
+}
+
+body.inverted .big-arrow::after {
+    border-top-color: #222222;
+}
+
+body.inverted #invertButton {
+    border-color: #aaaaaa;
+    color: #555555;
+}
+
+body.inverted #invertButton:hover {
+    color: #222222;
+    border-color: #777777;
+}body.inverted .site-logo {
+    filter: invert(1);
 }
