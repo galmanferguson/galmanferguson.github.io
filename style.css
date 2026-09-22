@@ -280,15 +280,12 @@ article p {
     font-size: 13px;
     letter-spacing: 1px;
     transition: all 0.3s;
-
 }
 
 .email-link:hover {
     border-color: #66b3ff;
     color: #66b3ff;
-
 }
-
 /* GALLERY */
 
 .gallery-page h2 {
@@ -413,38 +410,6 @@ footer {
     .contact-image {
         width: 130px;
     }
-}
-
-.story-navigation {
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 30px 0;
-    border-top: 1px solid #333333;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-
-.story-navigation a {
-    color: #888888;
-}
-
-.story-navigation a:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 600px) {
-
-    .story-navigation {
-        flex-direction: column;
-        text-align: center;
-        gap: 18px;
-        margin: 50px auto;
-    }
-
 }.featured-story {
     text-align: center;
 }
@@ -459,4 +424,308 @@ footer {
     height: auto;
     display: block;
     margin: 40px auto;
+}.about-mollerhatte {
+    text-align: justify;
+}
+
+.about-mollerhatte h2 {
+    text-align: center;
+}
+
+.about-mollerhatte p {
+    text-align: justify;
+}
+
+.mollerhatte-quote {
+    text-align: center !important;
+    font-size: 15px !important;
+    font-style: italic;
+    color: #888888 !important;
+    margin: -15px auto 45px;
+}.homepage-columns {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.homepage-narration {
+    border-right: 1px solid #333333;
+    padding-right: 35px;
+}
+
+.homepage-narration h2 {
+    text-align: left;
+}
+
+.narration-item {
+    margin-bottom: 45px;
+}
+
+.narration-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #333333;
+    margin-bottom: 15px;
+    transition: opacity 0.3s;
+}
+
+.narration-item img:hover {
+    opacity: 0.75;
+}
+
+.narration-item h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+}
+
+.narration-item p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #777777;
+    margin: 0;
+}
+
+.homepage-right {
+    min-width: 0;
+}
+
+.homepage-right section {
+    padding-top: 0;
+}
+
+@media (max-width: 700px) {
+
+    .homepage-columns {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .homepage-narration {
+        border-right: none;
+        border-bottom: 1px solid #333333;
+        padding-right: 0;
+        padding-bottom: 45px;
+    }
+
+    .homepage-narration h2 {
+        text-align: center;
+    }
+
+    .narration-item {
+        max-width: 400px;
+        margin: 0 auto 40px;
+    }
+
+    .homepage-right section {
+        padding-top: 50px;
+    }
+
+}.homepage-featured .featured-story h3 {
+    text-align: center;
+}
+
+.homepage-featured .featured-story p {
+    text-align: justify;
+}.publications-section h2 {
+    margin-bottom: 35px;
+}
+
+.publications-section article {
+    margin-bottom: 45px;
+}
+
+.publications-section h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.publications-section p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.publications-section .publication {
+    font-size: 13px;
+    color: #777777;
+}
+
+.publications-section a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}.publications-section {
+    background: #222222;
+    padding: 40px 35px;
+    border: 1px solid #333333;
+    margin-top: 50px;
+}
+
+.publications-section h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.publications-section article {
+    margin-bottom: 35px;
+}
+
+.publications-section article:last-child {
+    margin-bottom: 0;
+}.news-section {
+    background: #222222;
+    padding: 40px 35px;
+    border: 1px solid #333333;
+    margin-top: 50px;
+}
+
+.news-section h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.book-announcement {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.book-announcement img {
+    width: 180px;
+    height: auto;
+    display: block;
+    border: 1px solid #333333;
+}
+
+.book-announcement-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #aaaaaa;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    .book-announcement {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .book-announcement img {
+        width: 180px;
+        margin: 0 auto;
+    }
+
+}.copyright-section {
+    background: #222222;
+    padding: 40px 35px;
+    border: 1px solid #333333;
+    margin-top: 50px;
+}
+
+.copyright-section h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.copyright-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #aaaaaa;
+}
+
+.copyright-section .copyright-quote {
+    margin-top: 35px;
+    color: #888888;
+    font-style: italic;
+    text-align: center;
+}
+
+.copyright-section .copyright-notice {
+    margin-top: 35px;
+    color: #777777;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}.copyright-section p {
+    text-align: justify;
+}.story-search {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 10px;
+}
+
+.story-search input {
+    width: 100%;
+    padding: 12px 15px;
+    background: #222222;
+    border: 1px solid #333333;
+    color: #d6d6d6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.story-search input::placeholder {
+    color: #777777;
+}
+
+.story-search input:focus {
+    border-color: #555555;
+}
+
+.story-search button {
+    background: #222222;
+    border: 1px solid #333333;
+    color: #999999;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.story-search button:hover {
+    color: #ffffff;
+    border-color: #555555;
+}
+
+@media (max-width: 600px) {
+
+    .story-search {
+        padding: 0 20px;
+        grid-template-columns: 1fr 85px;
+    }
+
+}.homepage-narration .story-search {
+    margin: 35px 0 20px;
+}
+
+.homepage-featured .featured-story:first-child {
+    border-top: none;
+}.homepage-narration .story-search {
+    grid-template-columns: 1fr 55px;
+    gap: 6px;
+}
+
+.homepage-narration .story-search input {
+    height: 30px;
+    padding: 6px 9px;
+    font-size: 12px;
+}
+
+.homepage-narration .story-search button {
+    height: 30px;
+    padding: 0;
+    font-size: 8px;
+    letter-spacing: 1px;
 }
