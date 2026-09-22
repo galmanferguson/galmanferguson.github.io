@@ -426,6 +426,10 @@ footer {
     margin: 40px auto;
 }.about-mollerhatte {
     text-align: justify;
+    background: #222222;
+    padding: 40px 35px;
+    border: 1px solid #333333;
+    margin-top: 50px;
 }
 
 .about-mollerhatte h2 {
