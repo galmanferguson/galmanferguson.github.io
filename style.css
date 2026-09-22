@@ -1000,4 +1000,6 @@ body.inverted #invertButton:hover {
     border-color: #777777;
 }body.inverted .site-logo {
     filter: invert(1);
+}body.inverted .story-logo img {
+    filter: invert(1);
 }
