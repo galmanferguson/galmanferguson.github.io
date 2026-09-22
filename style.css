@@ -442,4 +442,12 @@ footer {
         margin: 50px auto;
     }
 
+}.featured-story {
+    text-align: center;
+}
+
+.featured-story h2,
+.featured-story h3,
+.featured-story p {
+    text-align: center;
 }
