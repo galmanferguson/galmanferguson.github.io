@@ -433,7 +433,7 @@ footer {
 }
 
 .about-mollerhatte h2 {
-    text-align: center;
+    text-align: left;
 }
 
 .about-mollerhatte p {
@@ -746,4 +746,15 @@ footer {
 }.view-all-stories {
     text-align: center;
     margin: 20px 0 90px;
+}.story-navigation {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px 0;
+    border-top: 1px solid #333333;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
