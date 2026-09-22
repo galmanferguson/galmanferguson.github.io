@@ -271,6 +271,7 @@ article p {
 }
 
 .email-link {
+ color: #3399ff;
     display: inline-block;
     margin-top: 10px;
     padding: 10px 18px;
@@ -279,11 +280,13 @@ article p {
     font-size: 13px;
     letter-spacing: 1px;
     transition: all 0.3s;
+
 }
 
 .email-link:hover {
-    border-color: #888888;
-    color: #ffffff;
+    border-color: #66b3ff;
+    color: #66b3ff;
+
 }
 
 /* GALLERY */
