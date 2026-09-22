@@ -743,4 +743,7 @@ footer {
     padding: 0;
     font-size: 8px;
     letter-spacing: 1px;
+}.view-all-stories {
+    text-align: center;
+    margin: 20px 0 90px;
 }
