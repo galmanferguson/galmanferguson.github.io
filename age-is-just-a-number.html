@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Age Is Just a Number | Galman Ferguson</title>
-
-    <link rel="icon" type="image/png" href="Picsart_25-07-14_00-37-41-230.png">
-
+    <title>BON APPÉTIT! — MÖLLERHATTÉ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ logo">
 
-   
+    <a href="index.html">
+        <img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+    </a>
 
-    <div class="tagline">HORROR & SPECULATIVE FICTION</div>
+    <div class="tagline">HORROR &amp; SPECULATIVE FICTION</div>
 
     <nav>
-    <a href="index.html">HOME</a>
-    <a href="stories.html">STORIES</a>
-    <a href="about.html">ABOUT</a>
-    <a href="gallery.html">GALLERY</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
+        <a href="index.html">HOME</a>
+        <a href="stories.html">STORIES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
 </header>
 
 <main>
 
-    <section class="story-page">
+    <button id="invertButton" type="button">INVERT COLORS</button>
 
-        <h2 class="story-title">AGE IS JUST A NUMBER</h2>
+        <h1 class="story-title">BON APPÉTIT!</h1>
 
-        <img class="story-image age-image" src="evil robot.png" alt="Age Is Just a Number">
-
-        
-
-        <div class="story-divider">✦ ✦ ✦</div>
+        <img class="bon-appetit-image" src="MRS. GLOUGH 3.png" alt="Mrs. Glough">
 
         <div class="story-text">
 
@@ -260,7 +253,7 @@
 
             <p>I laughed harder. “That’s rude, DEP.”</p>
 
-            <p>​"WHY INVEST IN THE SYMMETRY OF YOUR FACE? UPON CESSATION OF VITAL SIGNS, LYSOSOMES WILL BEGIN CELLULAR SELF-DIGESTION. IN AN UNDERGROUND ENVIRONMENT, THE EPIDERMIS OF THE MID-FACE TYPICALLY DETACHES WITHIN TEN DAYS. THE BONE BENEATH IS THE ONLY PERMANENT GEOMETRY. WOULD YOU LIKE ME TO CALCULATE THE EXACT DATE YOUR FEATURES BECOME UNRECOGNIZABLE?"</p>
+            <p>"WHY INVEST IN THE SYMMETRY OF YOUR FACE? UPON CESSATION OF VITAL SIGNS, LYSOSOMES WILL BEGIN CELLULAR SELF-DIGESTION. IN AN UNDERGROUND ENVIRONMENT, THE EPIDERMIS OF THE MID-FACE TYPICALLY DETACHES WITHIN TEN DAYS. THE BONE BENEATH IS THE ONLY PERMANENT GEOMETRY. WOULD YOU LIKE ME TO CALCULATE THE EXACT DATE YOUR FEATURES BECOME UNRECOGNIZABLE?"</p>
 
             <p>My smile faltered. “Okay. That’s creepy.”</p>
 
@@ -286,7 +279,7 @@
 
             <p>I frowned at him. “I sleep and eat well. Thank you very much.”</p>
 
-            <p>​"STATISTICAL MODELS CONFIRM THAT YOUR PATHOGENIC NUTRITIONAL INTAKE HAS TRUNCATED YOUR BIOLOGICAL SPAN BY THREE-THOUSAND-SIX-HUNDRED-FIFTY DAYS. THIS TEN-YEAR DEFICIT ENSURES A TERMINATION CHARACTERIZED BY ACUTE SYSTEMIC ISCHEMIA AND NEUROGENIC SHOCK. GIVEN YOUR ABSENCE OF BIOLOGICAL KIN, YOUR FINAL CESSATION WILL OCCUR IN TOTAL SOLITUDE.”</p>
+            <p>"STATISTICAL MODELS CONFIRM THAT YOUR PATHOGENIC NUTRITIONAL INTAKE HAS TRUNCATED YOUR BIOLOGICAL SPAN BY THREE-THOUSAND-SIX-HUNDRED-FIFTY DAYS. THIS TEN-YEAR DEFICIT ENSURES A TERMINATION CHARACTERIZED BY ACUTE SYSTEMIC ISCHEMIA AND NEUROGENIC SHOCK. GIVEN YOUR ABSENCE OF BIOLOGICAL KIN, YOUR FINAL CESSATION WILL OCCUR IN TOTAL SOLITUDE.”</p>
 
             <p>For a split second, the light on his head flashed dark red. His tone, disturbingly, remained calm.</p>
 
@@ -690,30 +683,45 @@
 
         </div>
 
-        <div class="story-logo">
-            <a href="index.html">
-                <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
-            </a>
+        <div class="story-navigation">
+            <a href="blind-date.html">← Previous Story</a>
+            <a href="stories.html">Back to Stories</a>
         </div>
-
-        <p>
-
-        </p>
 
     </section>
 
 </main>
 
-   <nav class="story-navigation">
-    <a href="the-cornfield.html">← Previous Story</a>
-    <a href="stories.html">Back to Stories</a>
-    <a href="blind-date.html">Next Story →</a>
-</nav>
-
 <footer>
-    © 2026 Galman Ferguson
+    © 2026 Galman Ferguson. All rights reserved.
 </footer>
 
-</body>
+<script>
+const invertButton = document.getElementById("invertButton");
 
+if (localStorage.getItem("invertColors") === "true") {
+    document.body.classList.add("inverted");
+}
+
+if (invertButton) {
+    invertButton.textContent =
+        document.body.classList.contains("inverted")
+            ? "NORMAL COLORS"
+            : "INVERT COLORS";
+
+    invertButton.addEventListener("click", function () {
+        document.body.classList.toggle("inverted");
+
+        if (document.body.classList.contains("inverted")) {
+            localStorage.setItem("invertColors", "true");
+            invertButton.textContent = "NORMAL COLORS";
+        } else {
+            localStorage.setItem("invertColors", "false");
+            invertButton.textContent = "INVERT COLORS";
+        }
+    });
+}
+</script>
+
+</body>
 </html>
