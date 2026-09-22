@@ -453,4 +453,10 @@ footer {
 .featured-story h3,
 .featured-story p {
     text-align: center;
+}.marevynn-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
 }
