@@ -593,6 +593,8 @@ footer {
     grid-template-columns: 180px 1fr;
     gap: 35px;
     align-items: center;
+ text-align: justify;
+    overflow-wrap: break-word;
 }
 
 .book-announcement img {
@@ -600,6 +602,12 @@ footer {
     height: auto;
     display: block;
     border: 1px solid #333333;
+ text-align: justify;
+    overflow-wrap: break-word;
+}
+
+.book-announcement-text {
+    min-width: 0;
 }
 
 .book-announcement-text p {
@@ -607,8 +615,9 @@ footer {
     line-height: 1.7;
     color: #aaaaaa;
     margin: 0;
+    text-align: start;
+    overflow-wrap: break-word;
 }
-
 @media (max-width: 600px) {
 
     .book-announcement {
