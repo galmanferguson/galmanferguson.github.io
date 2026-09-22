@@ -29,7 +29,9 @@
 
 <main>
 
-    <section class="story-page">
+    <button id="invertButton" type="button">INVERT COLORS</button>
+
+
 
         <h1 class="story-title">BON APPÉTIT!</h1>
 
@@ -361,6 +363,33 @@
 <footer>
     © 2026 Galman Ferguson. All rights reserved.
 </footer>
+
+<script>
+const invertButton = document.getElementById("invertButton");
+
+if (localStorage.getItem("invertColors") === "true") {
+    document.body.classList.add("inverted");
+}
+
+if (invertButton) {
+    invertButton.textContent =
+        document.body.classList.contains("inverted")
+            ? "NORMAL COLORS"
+            : "INVERT COLORS";
+
+    invertButton.addEventListener("click", function () {
+        document.body.classList.toggle("inverted");
+
+        if (document.body.classList.contains("inverted")) {
+            localStorage.setItem("invertColors", "true");
+            invertButton.textContent = "NORMAL COLORS";
+        } else {
+            localStorage.setItem("invertColors", "false");
+            invertButton.textContent = "INVERT COLORS";
+        }
+    });
+}
+</script>
 
 </body>
 </html>
