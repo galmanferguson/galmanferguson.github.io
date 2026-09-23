@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,95 +10,118 @@
 
 <body>
 
-<header>
-    <img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ logo">
+    <header class="top-header">
 
-    <div class="tagline">HORROR & SPECULATIVE FICTION</div>
+        <div class="header-menu-container">
 
-    <nav>
-    <a href="index.html">HOME</a>
-    <a href="stories.html">STORIES</a>
-    <a href="about.html">ABOUT</a>
-    <a href="gallery.html">GALLERY</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
-</header>
+            <button class="header-menu" type="button" onclick="toggleMenu()">
+                <span class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span>MENU</span>
+            </button>
 
-<main>
+            <div class="header-dropdown" id="headerDropdown">
+                <a href="index.html">HOME</a>
+                <a href="stories.html">STORIES</a>
+                <a href="about.html">ABOUT</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
 
-    <button id="invertButton" type="button">INVERT COLORS</button>
+        </div>
 
+        <a href="index.html" class="header-logo">
+            <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+            <span>HORROR &amp; SPECULATIVE FICTION</span>
+        </a>
 
+        <a href="contact.html" class="header-contact">CONTACT</a>
 
-   <img class="contact-image" src="MOLLERHATTE.png" alt="MÖLLERHATTÉ">
+    </header>
 
-<h2 class="contact-title">CONTACT</h2>
+    <main>
 
-       <p>
-    For writing, publication, narration, or other inquiries, you can
-    get in touch with Galman Ferguson by email.
-</p>
+        <button id="invertButton" type="button">INVERT COLORS</button>
 
-<p>
-    <strong>Writing & Publications</strong><br>
-    For editors, publishers, magazines, and literary opportunities.
-</p>
+        <img class="contact-image" src="MOLLERHATTE.png" alt="MÖLLERHATTÉ">
 
-<p>
-    <p>
-    <strong>Narration & Adaptation</strong><br>
-    For narrators, YouTube channels, podcasts, and other audio adaptations.
-    <br><br>
-    <a href="narrations.html">View Narrations →</a>
-</p>
-</p>
+        <h2 class="contact-title">CONTACT</h2>
 
-<p>
-    <strong>General Inquiries</strong><br>
-    For anything else related to my work.
-</p>
+        <p>
+            For writing, publication, narration, or other inquiries, you can
+            get in touch with Galman Ferguson by email.
+        </p>
 
-<p>
-    <a class="email-link" href="mailto:galmanfrederickferguson@gmail.com">galmanfrederickferguson@gmail.com</a>
-</p>
+        <p>
+            <strong>Writing &amp; Publications</strong><br>
+            For editors, publishers, magazines, and literary opportunities.
+        </p>
+
+        <p>
+            <strong>Narration &amp; Adaptation</strong><br>
+            For narrators, YouTube channels, podcasts, and other audio adaptations.
+            <br><br>
+            <a href="narrations.html">View Narrations →</a>
+        </p>
+
+        <p>
+            <strong>General Inquiries</strong><br>
+            For anything else related to my work.
+        </p>
+
+        <p>
+            <a class="email-link" href="mailto:galmanfrederickferguson@gmail.com">
+                galmanfrederickferguson@gmail.com
+            </a>
+        </p>
 
         <p>
             <a href="index.html">← Back to Home</a>
         </p>
-    </section>
 
-</main>
+    </main>
 
-<footer>
-    © 2026 Galman Ferguson
-</footer>
+    <footer>
+        © 2026 Galman Ferguson
+    </footer>
 
-<script>
-const invertButton = document.getElementById("invertButton");
+    <script>
+        const invertButton = document.getElementById("invertButton");
 
-if (localStorage.getItem("invertColors") === "true") {
-    document.body.classList.add("inverted");
-}
-
-if (invertButton) {
-    invertButton.textContent =
-        document.body.classList.contains("inverted")
-            ? "NORMAL COLORS"
-            : "INVERT COLORS";
-
-    invertButton.addEventListener("click", function () {
-        document.body.classList.toggle("inverted");
-
-        if (document.body.classList.contains("inverted")) {
-            localStorage.setItem("invertColors", "true");
-            invertButton.textContent = "NORMAL COLORS";
-        } else {
-            localStorage.setItem("invertColors", "false");
-            invertButton.textContent = "INVERT COLORS";
+        if (localStorage.getItem("invertColors") === "true") {
+            document.body.classList.add("inverted");
         }
-    });
-}
-</script>
+
+        if (invertButton) {
+            invertButton.textContent =
+                document.body.classList.contains("inverted")
+                    ? "NORMAL COLORS"
+                    : "INVERT COLORS";
+
+            invertButton.addEventListener("click", function () {
+                document.body.classList.toggle("inverted");
+
+                if (document.body.classList.contains("inverted")) {
+                    localStorage.setItem("invertColors", "true");
+                    invertButton.textContent = "NORMAL COLORS";
+                } else {
+                    localStorage.setItem("invertColors", "false");
+                    invertButton.textContent = "INVERT COLORS";
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("headerDropdown");
+            menu.classList.toggle("show");
+        }
+    </script>
 
 </body>
+
 </html>
