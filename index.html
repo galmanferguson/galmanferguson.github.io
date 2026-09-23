@@ -435,28 +435,15 @@
     </script>
 
     <script>
-const menuButton = document.getElementById("menuButton");
-const headerDropdown = document.getElementById("headerDropdown");
-const topHeader = document.querySelector(".top-header");
+        const menuButton = document.getElementById("menuButton");
+        const headerDropdown = document.getElementById("headerDropdown");
 
-menuButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    headerDropdown.classList.toggle("show");
-});
-
-function updateHeaderSize() {
-    if (window.scrollY === 0) {
-        topHeader.classList.remove("compact");
-    } else {
-        topHeader.classList.add("compact");
-    }
-}
-
-window.addEventListener("scroll", updateHeaderSize);
-
-updateHeaderSize();
-</script>
+        menuButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            headerDropdown.classList.toggle("show");
+        });
+    </script>
 
 </body>
 
