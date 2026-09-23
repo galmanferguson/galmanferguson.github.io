@@ -12,6 +12,7 @@ background: #000000;
 color: #d6d6d6;
 font-family: Georgia, "Times New Roman", serif;
 line-height: 1.8;
+padding-top: 200px;
 }
 
 /* HEADER */
@@ -1029,14 +1030,24 @@ body.inverted .story-logo img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     box-sizing: border-box;
     padding: 0 25px;
     border-bottom: none;
+    z-index: 3000;
+
+    /* SHRINKING HEADER */
+    transition:
+        height 0.45s ease,
+        padding 0.45s ease;
 }
 
 .header-menu-container {
     position: relative;
+    z-index: 4000;
+    transition: transform 0.45s ease;
 }
 
 .header-menu,
@@ -1046,6 +1057,10 @@ body.inverted .story-logo img {
     letter-spacing: 2px;
     color: #ffffff;
     text-decoration: none;
+    transition:
+        font-size 0.45s ease,
+        letter-spacing 0.45s ease,
+        transform 0.45s ease;
 }
 
 .header-menu {
@@ -1061,6 +1076,9 @@ body.inverted .story-logo img {
     appearance: none;
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 4001;
+    touch-action: manipulation;
 }
 
 .header-menu:hover,
@@ -1081,6 +1099,10 @@ body.inverted .story-logo img {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    transition:
+        width 0.45s ease,
+        gap 0.45s ease,
+        transform 0.45s ease;
 }
 
 .hamburger span {
@@ -1088,6 +1110,9 @@ body.inverted .story-logo img {
     width: 24px;
     height: 2px;
     background: #ffffff;
+    transition:
+        width 0.45s ease,
+        height 0.45s ease;
 }
 
 .header-menu:hover .hamburger span {
@@ -1103,6 +1128,9 @@ body.inverted .story-logo img {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    z-index: 1;
+    transition:
+        transform 0.45s ease;
 }
 
 .header-logo img {
@@ -1110,6 +1138,9 @@ body.inverted .story-logo img {
     height: auto;
     display: block;
     transform: translateY(20px);
+    transition:
+        width 0.45s ease,
+        transform 0.45s ease;
 }
 
 .header-logo span {
@@ -1120,6 +1151,10 @@ body.inverted .story-logo img {
     letter-spacing: 2px;
     color: #777777;
     white-space: nowrap;
+    transition:
+        font-size 0.45s ease,
+        letter-spacing 0.45s ease,
+        margin 0.45s ease;
 }
 
 /* HEADER DROPDOWN MENU */
@@ -1132,7 +1167,7 @@ body.inverted .story-logo img {
     min-width: 150px;
     background: #000000;
     border: 1px solid #333333;
-    z-index: 1000;
+    z-index: 4002;
     padding: 10px 0;
 }
 
@@ -1160,6 +1195,49 @@ body.inverted .story-logo img {
 
 .header-dropdown.show {
     display: block;
+}
+
+/* COMPACT HEADER */
+
+.top-header.compact {
+    height: 90px;
+    padding: 0 25px;
+}
+
+.top-header.compact .header-menu,
+.top-header.compact .header-contact {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.top-header.compact .header-menu {
+    gap: 7px;
+}
+
+.top-header.compact .hamburger {
+    width: 18px;
+    gap: 4px;
+}
+
+.top-header.compact .hamburger span {
+    width: 18px;
+    height: 1.5px;
+}
+
+.top-header.compact .header-logo img {
+    width: 95px;
+    transform: translateY(8px);
+}
+
+.top-header.compact .header-logo span {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.top-header.compact .header-dropdown {
+    top: 100%;
 }
 
 /* INVERTED TOP HEADER */
@@ -1210,22 +1288,94 @@ body.inverted .header-dropdown a {
 body.inverted .header-dropdown a:hover {
     background: #eeeeee;
     color: #222222;
-}.header-menu-container {
-    position: relative;
-    z-index: 2000;
 }
 
-.header-menu {
-    position: relative;
-    z-index: 2001;
-    touch-action: manipulation;
-}
+/* HEADER MOBILE */
 
-.header-dropdown {
-    z-index: 2002;
-}
+@media (max-width: 600px) {
 
-.header-logo,
-.header-contact {
-    z-index: 1;
+    .top-header {
+        height: 200px;
+        padding: 0 15px;
+    }
+
+    .header-menu,
+    .header-contact {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .hamburger {
+        width: 22px;
+        gap: 5px;
+    }
+
+    .hamburger span {
+        width: 22px;
+    }
+
+    .header-logo img {
+        width: 100px;
+    }
+
+    .header-logo span {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .header-dropdown {
+        top: 100%;
+        min-width: 140px;
+    }
+
+    .header-dropdown a {
+        height: 36px;
+        padding: 0 16px;
+        line-height: 36px;
+        font-size: 11px;
+    }
+
+    /* COMPACT MOBILE HEADER */
+
+    .top-header.compact {
+        height: 75px;
+        padding: 0 15px;
+    }
+
+    .top-header.compact .header-menu,
+    .top-header.compact .header-contact {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .top-header.compact .header-menu {
+        gap: 6px;
+    }
+
+    .top-header.compact .hamburger {
+        width: 17px;
+        gap: 3px;
+    }
+
+    .top-header.compact .hamburger span {
+        width: 17px;
+        height: 1.5px;
+    }
+
+    .top-header.compact .header-logo img {
+        width: 85px;
+        transform: translateY(6px);
+    }
+
+    .top-header.compact .header-logo span {
+        font-size: 8px;
+        letter-spacing: 0.8px;
+        margin-top: 1px;
+        margin-bottom: 3px;
+    }
+
+    .top-header.compact .header-dropdown {
+        min-width: 130px;
+    }
+
 }
