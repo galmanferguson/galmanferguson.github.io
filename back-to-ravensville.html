@@ -12,58 +12,67 @@
 
 <body>
 
-<header>
-    <img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ logo">
+<header class="top-header">
 
-    
-    <div class="tagline">HORROR & SPECULATIVE FICTION</div>
+    <div class="header-menu-container">
 
-    <nav>
-    <a href="index.html">HOME</a>
-    <a href="stories.html">STORIES</a>
-    <a href="about.html">ABOUT</a>
-    <a href="gallery.html">GALLERY</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
+        <button class="header-menu" type="button" onclick="toggleMenu()">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>MENU</span>
+        </button>
+
+        <div class="header-dropdown" id="headerDropdown">
+            <a href="index.html">HOME</a>
+            <a href="stories.html">STORIES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="header-logo">
+        <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        <span>HORROR &amp; SPECULATIVE FICTION</span>
+    </a>
+
+    <a href="contact.html" class="header-contact">CONTACT</a>
+
 </header>
 
 <main>
 
     <button id="invertButton" type="button">INVERT COLORS</button>
 
+    <h2 class="story-title">BACK TO RAVENSVILLE</h2>
 
+    <img class="story-image ravensville-image" src="ravensville.png" alt="Back To Ravensville">
 
-        <h2 class="story-title">BACK TO RAVENSVILLE</h2>
+    <div class="story-divider">✦ ✦ ✦</div>
 
-        <img class="story-image ravensville-image" src="ravensville.png" alt="Back To Ravensville">
+    <p style="text-align: center; color: #777777; font-family: Arial, sans-serif; letter-spacing: 4px; font-size: 20px;">
+        COMING SOON
+    </p>
 
+    <div class="story-logo">
+        <a href="index.html">
+            <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        </a>
+    </div>
 
+    <p>
 
-        <div class="story-divider">✦ ✦ ✦</div>
-
-         <p style="text-align: center; color: #777777; font-family: Arial, sans-serif; letter-spacing: 4px; font-size: 20px;">
-                COMING SOON
-            </p>
-
-
-
-        </div>
-
-        <div class="story-logo">
-            <a href="index.html">
-                <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
-            </a>
-        </div>
-
-        <p>
-
-        </p>
+    </p>
 
     </section>
 
 </main>
 
-   <nav class="story-navigation">
+<nav class="story-navigation">
     <a href="the-wishing-well-of-heathenberry-forest.html">← Previous Story</a>
     <a href="stories.html">Back to Stories</a>
     <a href="beyond-the-ridge.html">Next Story →</a>
@@ -72,6 +81,27 @@
 <footer>
     © 2026 Galman Ferguson
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("headerDropdown");
+    menu.classList.toggle("show");
+}
+
+const topHeader = document.querySelector(".top-header");
+
+function updateHeaderSize() {
+    if (window.scrollY === 0) {
+        topHeader.classList.remove("compact");
+    } else {
+        topHeader.classList.add("compact");
+    }
+}
+
+window.addEventListener("scroll", updateHeaderSize);
+
+updateHeaderSize();
+</script>
 
 <script>
 const invertButton = document.getElementById("invertButton");
