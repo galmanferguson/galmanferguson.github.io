@@ -9,19 +9,35 @@
 
 <body>
 
-<header>
-    <img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ logo">
+<header class="top-header">
 
+    <div class="header-menu-container">
 
-    <div class="tagline">HORROR & SPECULATIVE FICTION</div>
+        <button class="header-menu" type="button" onclick="toggleMenu()">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>MENU</span>
+        </button>
 
-   <nav>
-    <a href="index.html">HOME</a>
-    <a href="stories.html">STORIES</a>
-    <a href="about.html">ABOUT</a>
-    <a href="gallery.html">GALLERY</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
+        <div class="header-dropdown" id="headerDropdown">
+            <a href="index.html">HOME</a>
+            <a href="stories.html">STORIES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="header-logo">
+        <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        <span>HORROR &amp; SPECULATIVE FICTION</span>
+    </a>
+
+    <a href="contact.html" class="header-contact">CONTACT</a>
 
 </header>
 
@@ -29,27 +45,24 @@
 
     <button id="invertButton" type="button">INVERT COLORS</button>
 
-       <h2 class="story-title">MAREVYNN RISE</h2>
+    <h2 class="story-title">MAREVYNN RISE</h2>
 
-        <p class="publication">Published in The Bleeding Margin</p>
+    <p class="publication">Published in The Bleeding Margin</p>
 
-       <img class="marevynn-image" src="Picsart_25-11-26_17-18-51-678.png" alt="Marevynn Rise">
+    <img class="marevynn-image" src="Picsart_25-11-26_17-18-51-678.png" alt="Marevynn Rise">
 
-   
+    <p style="text-align: center; color: #777777; font-family: Arial, sans-serif; letter-spacing: 4px; font-size: 14px;">
+        COMING SOON
+    </p>
 
-        <p style="text-align: center; color: #777777; font-family: Arial, sans-serif; letter-spacing: 4px; font-size: 14px;">
-                COMING SOON
-            </p>
-
-
-        <p>
-           
-        </p>
+    <p>
+       
+    </p>
     </section>
 
 </main>
 
-   <nav class="story-navigation">
+<nav class="story-navigation">
     <a href="stories.html">Back to Stories</a>
     <a href="into-the-mangrove-forest.html">Next Story →</a>
 </nav>
@@ -57,6 +70,27 @@
 <footer>
     © 2026 Galman Ferguson
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("headerDropdown");
+    menu.classList.toggle("show");
+}
+
+const topHeader = document.querySelector(".top-header");
+
+function updateHeaderSize() {
+    if (window.scrollY === 0) {
+        topHeader.classList.remove("compact");
+    } else {
+        topHeader.classList.add("compact");
+    }
+}
+
+window.addEventListener("scroll", updateHeaderSize);
+
+updateHeaderSize();
+</script>
 
 <script>
 const invertButton = document.getElementById("invertButton");
