@@ -424,9 +424,12 @@ text-align: center;
 }
 
 .featured-story h2,
-.featured-story h3,
-.featured-story p {
+.featured-story h3 {
 text-align: center;
+}
+
+.featured-story p {
+text-align: justify;
 }
 
 /* MAREVYNN */
@@ -542,7 +545,7 @@ text-align: center;
 }
 
 .homepage-featured .featured-story p {
-text-align: center;
+text-align: justify;
 }
 
 .homepage-featured .featured-story {
