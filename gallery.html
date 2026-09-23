@@ -1,127 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Galman Ferguson</title>
+    <title>GALLERY — MÖLLERHATTÉ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="top-header">
+<header class="top-header">
 
-        <div class="header-menu-container">
+    <div class="header-menu-container">
 
-            <button class="header-menu" type="button" onclick="toggleMenu()">
-                <span class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-                <span>MENU</span>
-            </button>
+        <button class="header-menu" type="button" onclick="toggleMenu()">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>MENU</span>
+        </button>
 
-            <div class="header-dropdown" id="headerDropdown">
-                <a href="index.html">HOME</a>
-                <a href="stories.html">STORIES</a>
-                <a href="about.html">ABOUT</a>
-                <a href="gallery.html">GALLERY</a>
-                <a href="contact.html">CONTACT</a>
-            </div>
-
+        <div class="header-dropdown" id="headerDropdown">
+            <a href="index.html">HOME</a>
+            <a href="stories.html">STORIES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
         </div>
 
-        <a href="index.html" class="header-logo">
-            <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
-            <span>HORROR &amp; SPECULATIVE FICTION</span>
-        </a>
+    </div>
 
-        <a href="contact.html" class="header-contact">CONTACT</a>
+    <a href="index.html" class="header-logo">
+        <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        <span>HORROR &amp; SPECULATIVE FICTION</span>
+    </a>
 
-    </header>
+    <a href="contact.html" class="header-contact">CONTACT</a>
 
-    <main>
+</header>
 
-        <button id="invertButton" type="button">INVERT COLORS</button>
+<main>
 
-        <img class="contact-image" src="MOLLERHATTE.png" alt="MÖLLERHATTÉ">
+<button id="invertButton" type="button">INVERT COLORS</button>
 
-        <h2 class="contact-title">CONTACT</h2>
 
-        <p>
-            For writing, publication, narration, or other inquiries, you can
-            get in touch with Galman Ferguson by email.
-        </p>
+    <h2>GALLERY</h2>
 
-        <p>
-            <strong>Writing &amp; Publications</strong><br>
-            For editors, publishers, magazines, and literary opportunities.
-        </p>
+    <div class="gallery">
 
-        <p>
-            <strong>Narration &amp; Adaptation</strong><br>
-            For narrators, YouTube channels, podcasts, and other audio adaptations.
-            <br><br>
-            <a href="narrations.html">View Narrations →</a>
-        </p>
+        <img src="BLIND DATE ILLUSTRATION.png" alt="">
+        <img src="cornfield.png" alt="">
+        <img src="evil robot.png" alt="">
+        <img src="MANGROVE CREATURE.png" alt="">
+        <img src="Picsart_25-11-26_17-18-51-678.png" alt="">
 
-        <p>
-            <strong>General Inquiries</strong><br>
-            For anything else related to my work.
-        </p>
+        <img src="gallery-images-1/SCARECROW.png" alt="">
+        <img src="gallery-images-1/SHADOW PERSON.png" alt="">
+        <img src="gallery-images-1/SKELETON HAND 2.png" alt="">
+        <img src="gallery-images-1/SKELETON HAND 3.png" alt="">
+        <img src="gallery-images-1/SKELETON HAND.png" alt="">
+        <img src="gallery-images-1/THE LONELY GRAVE.png" alt="">
+        <img src="gallery-images-1/THE LONELY PILGRIM.png" alt="">
+        <img src="gallery-images-1/THE MINE.png" alt="">
 
-        <p>
-            <a class="email-link" href="mailto:galmanfrederickferguson@gmail.com">
-                galmanfrederickferguson@gmail.com
-            </a>
-        </p>
+        <img src="gallery-images-2A/LUMBERJACK.png" alt="">
+        <img src="gallery-images-2A/MANGROVE CREATURE 2.png" alt="">
+        <img src="gallery-images-2A/MANGROVE CREATURE 3.png" alt="">
+        <img src="gallery-images-2A/MRS. GLOUGH 2.png" alt="">
 
-        <p>
-            <a href="index.html">← Back to Home</a>
-        </p>
+        <img src="gallery-images-2B/MRS. GLOUGH 3.png" alt="">
+        <img src="gallery-images-2B/MRS. GLOUGH.png" alt="">
+        <img src="gallery-images-2B/PILGRIM.png" alt="">
+        <img src="gallery-images-2B/RAVENSVILLE TWO.png" alt="">
 
-    </main>
+        <img src="gallery-images-3/THE PRIEST.png" alt="">
 
-    <footer>
-        © 2026 Galman Ferguson
-    </footer>
+    </div>
 
-    <script>
-        const invertButton = document.getElementById("invertButton");
+</main>
 
-        if (localStorage.getItem("invertColors") === "true") {
-            document.body.classList.add("inverted");
+<footer>
+    © 2026 Galman Ferguson. All rights reserved.
+</footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("headerDropdown");
+    menu.classList.toggle("show");
+}
+</script>
+
+<script>
+const invertButton = document.getElementById("invertButton");
+
+if (localStorage.getItem("invertColors") === "true") {
+    document.body.classList.add("inverted");
+}
+
+if (invertButton) {
+    invertButton.textContent =
+        document.body.classList.contains("inverted")
+            ? "NORMAL COLORS"
+            : "INVERT COLORS";
+
+    invertButton.addEventListener("click", function () {
+        document.body.classList.toggle("inverted");
+
+        if (document.body.classList.contains("inverted")) {
+            localStorage.setItem("invertColors", "true");
+            invertButton.textContent = "NORMAL COLORS";
+        } else {
+            localStorage.setItem("invertColors", "false");
+            invertButton.textContent = "INVERT COLORS";
         }
-
-        if (invertButton) {
-            invertButton.textContent =
-                document.body.classList.contains("inverted")
-                    ? "NORMAL COLORS"
-                    : "INVERT COLORS";
-
-            invertButton.addEventListener("click", function () {
-                document.body.classList.toggle("inverted");
-
-                if (document.body.classList.contains("inverted")) {
-                    localStorage.setItem("invertColors", "true");
-                    invertButton.textContent = "NORMAL COLORS";
-                } else {
-                    localStorage.setItem("invertColors", "false");
-                    invertButton.textContent = "INVERT COLORS";
-                }
-            });
-        }
-    </script>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("headerDropdown");
-            menu.classList.toggle("show");
-        }
-    </script>
+    });
+}
+</script>
 
 </body>
-
 </html>
