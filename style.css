@@ -263,6 +263,44 @@ width: 180px;
 height: auto;
 display: block;
 margin: 0 auto;
+animation: contactImageBlink 4.5s ease-in-out infinite;
+}
+
+@keyframes contactImageBlink {
+    0%, 100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    8% {
+        opacity: 0.82;
+        filter: brightness(0.85);
+    }
+
+    12% {
+        opacity: 1;
+        filter: brightness(1.15);
+    }
+
+    48% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    51% {
+        opacity: 0.62;
+        filter: brightness(0.75);
+    }
+
+    54% {
+        opacity: 0.92;
+        filter: brightness(1.25);
+    }
+
+    57% {
+        opacity: 1;
+        filter: brightness(1.12);
+    }
 }
 
 .contact-image + h2 {
@@ -648,6 +686,36 @@ text-align: start;
 overflow-wrap: break-word;
 }
 
+/* INDONESIAN VERSION ANNOUNCEMENT */
+
+/* INDONESIAN VERSION ANNOUNCEMENT */
+
+.language-announcement {
+margin-top: 45px;
+padding-top: 45px;
+border-top: 1px solid #333333;
+}
+
+.language-announcement h3 {
+display: flex;
+align-items: center;
+gap: 12px;
+text-align: left;
+margin-bottom: 15px;
+font-size: 13px;
+font-weight: bold;
+}
+
+.language-announcement h3 img {
+width: 28px;
+height: auto;
+display: block;
+flex-shrink: 0;
+}
+
+.language-announcement p {
+text-align: justify;
+}
 /* COPYRIGHT & RIGHTS */
 
 .copyright-section {
