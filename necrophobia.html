@@ -12,17 +12,36 @@
 
 <body>
 
-<header>
+<header class="top-header">
 
-    <div class="tagline">HORROR & SPECULATIVE FICTION</div>
+    <div class="header-menu-container">
 
-    <nav>
-    <a href="index.html">HOME</a>
-    <a href="stories.html">STORIES</a>
-    <a href="about.html">ABOUT</a>
-    <a href="gallery.html">GALLERY</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
+        <button class="header-menu" type="button" onclick="toggleMenu()">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>MENU</span>
+        </button>
+
+        <div class="header-dropdown" id="headerDropdown">
+            <a href="index.html">HOME</a>
+            <a href="stories.html">STORIES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="header-logo">
+        <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        <span>HORROR &amp; SPECULATIVE FICTION</span>
+    </a>
+
+    <a href="contact.html" class="header-contact">CONTACT</a>
+
 </header>
 
 <main>
@@ -631,8 +650,8 @@
 
             <p>
                 I just stared at her, waiting for something more. Some
-                explanation that would make it feel less wrong, less like what I
-                had heard. I swallowed hard, again and again, my throat tight
+                explanation that would make it feel less wrong, less like what
+                I had heard. I swallowed hard, again and again, my throat tight
                 with something between fear and embarrassment. A minute ago, I
                 had been terrified. Now I just felt stupid. And somehow, that
                 didn’t make it any better.
@@ -945,10 +964,10 @@
 
             <p>
                 “Mrs. Tafel? Help! Anybody?” I slammed my hands against the
-                elevator doors, over and over, blind in the dark. My chest heaved
-                as panic took over. After a while, I stopped, squeezing my eyes
-                shut and dragging in a shaky breath. I rubbed my face, but it
-                didn’t help.
+                elevator doors, over and over, blind in the dark. My chest
+                heaved as panic took over. After a while, I stopped, squeezing
+                my eyes shut and dragging in a shaky breath. I rubbed my face,
+                but it didn’t help.
             </p>
 
             <p>
@@ -1244,6 +1263,27 @@
 <footer>
     © 2026 Galman Ferguson
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("headerDropdown");
+    menu.classList.toggle("show");
+}
+
+const topHeader = document.querySelector(".top-header");
+
+function updateHeaderSize() {
+    if (window.scrollY === 0) {
+        topHeader.classList.remove("compact");
+    } else {
+        topHeader.classList.add("compact");
+    }
+}
+
+window.addEventListener("scroll", updateHeaderSize);
+
+updateHeaderSize();
+</script>
 
 <script>
 const invertButton = document.getElementById("invertButton");
