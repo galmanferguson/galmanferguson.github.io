@@ -20,7 +20,7 @@
 
         <div class="header-menu-container">
 
-            <button class="header-menu" type="button" onclick="toggleMenu()">
+            <button class="header-menu" id="menuButton" type="button">
                 <span class="hamburger">
                     <span></span>
                     <span></span>
@@ -435,10 +435,14 @@
     </script>
 
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById("headerDropdown");
-            menu.classList.toggle("show");
-        }
+        const menuButton = document.getElementById("menuButton");
+        const headerDropdown = document.getElementById("headerDropdown");
+
+        menuButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            headerDropdown.classList.toggle("show");
+        });
     </script>
 
 </body>
