@@ -1160,7 +1160,6 @@ body.inverted .story-logo img {
 /* HEADER DROPDOWN MENU */
 
 .header-dropdown {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -1169,7 +1168,20 @@ body.inverted .story-logo img {
     border: 1px solid #333333;
     z-index: 4002;
     padding: 10px 0;
+
+    /* CLOSED STATE */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.4s ease,
+        visibility 0s linear 0.45s;
 }
+
+/* MENU LINKS */
 
 .header-dropdown a {
     display: block;
@@ -1186,6 +1198,13 @@ body.inverted .story-logo img {
     font-weight: normal;
     letter-spacing: 1.5px;
     white-space: nowrap;
+
+    opacity: 0;
+    transform: translateY(-18px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.35s ease;
 }
 
 .header-dropdown a:hover {
@@ -1193,48 +1212,72 @@ body.inverted .story-logo img {
     color: #ffffff;
 }
 
+/* OPEN MENU */
+
 .header-dropdown.show {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.4s ease,
+        visibility 0s linear 0s;
 }
 
-/* STAGGERED DROPDOWN SLIDE-DOWN */
-
-.header-dropdown.show a {
-    opacity: 0;
-    transform: translateY(-18px);
-    animation: menuItemSlideDown 0.35s ease forwards;
-}
+/* SLIDE DOWN ONE AFTER ANOTHER */
 
 .header-dropdown.show a:nth-child(1) {
-    animation-delay: 0.05s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.05s;
 }
 
 .header-dropdown.show a:nth-child(2) {
-    animation-delay: 0.14s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.13s;
 }
 
 .header-dropdown.show a:nth-child(3) {
-    animation-delay: 0.23s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.21s;
 }
 
 .header-dropdown.show a:nth-child(4) {
-    animation-delay: 0.32s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.29s;
 }
 
 .header-dropdown.show a:nth-child(5) {
-    animation-delay: 0.41s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.37s;
 }
 
-@keyframes menuItemSlideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-18px);
-    }
+/* CLOSING ANIMATION */
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.header-dropdown:not(.show) a:nth-child(1) {
+    transition-delay: 0.28s;
+}
+
+.header-dropdown:not(.show) a:nth-child(2) {
+    transition-delay: 0.21s;
+}
+
+.header-dropdown:not(.show) a:nth-child(3) {
+    transition-delay: 0.14s;
+}
+
+.header-dropdown:not(.show) a:nth-child(4) {
+    transition-delay: 0.07s;
+}
+
+.header-dropdown:not(.show) a:nth-child(5) {
+    transition-delay: 0s;
 }
 
 /* COMPACT HEADER */
