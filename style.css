@@ -1210,4 +1210,22 @@ body.inverted .header-dropdown a {
 body.inverted .header-dropdown a:hover {
     background: #eeeeee;
     color: #222222;
+}.header-menu-container {
+    position: relative;
+    z-index: 2000;
+}
+
+.header-menu {
+    position: relative;
+    z-index: 2001;
+    touch-action: manipulation;
+}
+
+.header-dropdown {
+    z-index: 2002;
+}
+
+.header-logo,
+.header-contact {
+    z-index: 1;
 }
