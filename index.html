@@ -1,341 +1,445 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-<head> <meta charset="UTF-8"> <meta property="og:title" content="MÖLLERHATTÉ — Horror & Speculative Fiction"> <meta property="og:description" content="Horror and speculative fiction by Galman Ferguson."> <meta property="og:image" content="https://galmanferguson.github.io/Picsart_25-07-14_00-37-41-230.png"> <meta property="og:url" content="https://galmanferguson.github.io/"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" type="image/png" href="favicon.png"> <title>Galman Ferguson | Horror & Speculative Fiction</title>
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="MÖLLERHATTÉ — Horror & Speculative Fiction">
+    <meta property="og:description" content="Horror and speculative fiction by Galman Ferguson.">
+    <meta property="og:image" content="https://galmanferguson.github.io/Picsart_25-07-14_00-37-41-230.png">
+    <meta property="og:url" content="https://galmanferguson.github.io/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Galman Ferguson | Horror & Speculative Fiction</title>
 
-
-
-
-<link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
-<header>
-<img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ logo">
+    <header class="top-header">
 
+        <div class="header-menu-container">
 
-    <p class="tagline">HORROR & SPECULATIVE FICTION</p>
+            <button class="header-menu" type="button" onclick="toggleMenu()">
+                <span class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span>MENU</span>
+            </button>
 
-    <nav>
-<a href="index.html">HOME</a>
-<a href="stories.html">STORIES</a>
-<a href="about.html">ABOUT</a>
-<a href="gallery.html">GALLERY</a>
-<a href="contact.html">CONTACT</a>
+            <div class="header-dropdown" id="headerDropdown">
 
-</nav>
-
-</header>
-
-</header>
-
-<main>
-
-<main>
-
-
-
-<div class="homepage-columns">
-
-<aside class="homepage-narration">
-
-<div class="story-search">
-
-<input type="text" id="storySearch" placeholder="Search for a story..." onkeydown="if (event.key === 'Enter') searchStory();">
-
-<button type="button" onclick="searchStory()">SEARCH</button>
-
-</div>
-
-<div class="scroll-indicator"> <span class="big-arrow"></span> <span>Scroll Down Here</span>
-
-<div class="homepage-featured">
-
-       <section class="featured-story" id="featured-stories">
-
- <h2>FEATURED STORIES &amp; NARRATIONS</h2>
-
-
-<h3>
-    <a href="age-is-just-a-number.html">Age Is Just a Number</a>
-</h3>
-
-<p>
-    A troubled photographer turns to an artificial intelligence companion for help with his loneliness,
-    only to discover that some truths are better left unknown.
-</p>
-
-<p>
-    <a href="age-is-just-a-number.html">Read Age Is Just a Number →</a>
-</p>
-
-
-<h3>
-    <a href="blind-date.html">Blind Date</a>
-</h3>
-
-<p>
-    A mysterious stranger sits down with a troubled woman for a seemingly ordinary blind date,
-    but nothing about their meeting is quite what it seems.
-</p>
-
-<p>
-    <a href="blind-date.html">Read Blind Date →</a>
-</p>
-
-
-<h3>
-    <a href="the-wishing-well-of-heathenberry-forest.html">
-        The Wishing Well Of Heathenberry Forest
-    </a>
-</h3>
-
-<p>
-    Deep within the forbidden Heathenberry Forest lies an ancient well surrounded by strange rules
-    and darker legends. One night, a young boy decides to find out for himself what lurks below.
-</p>
-
-<p>
-    <a href="the-wishing-well-of-heathenberry-forest.html">
-        Read The Wishing Well Of Heathenberry Forest →
-    </a>
-</p>
-
-<div class="view-all-stories"> <a href="stories.html">VIEW ALL STORIES →</a> </div>
-
-    <div class="narration-item">
-        <a href="https://youtu.be/I7tcVQQcvWk?si=6gjdEl22lYr4kjF9" target="_blank">
-            <img src="https://img.youtube.com/vi/I7tcVQQcvWk/maxresdefault.jpg"
- alt="Into The Mangrove Forest narration">
-        </a>
-        <h3>Into The Mangrove Forest</h3>
-        <p>Listen to the narrated story on YouTube.</p>
-    </div>
-
-    <div class="narration-item">
-        <a href="https://youtu.be/Mzs5k03noHs?si=PXHTR_hX0NM6T5A8" target="_blank">
-            <img src="https://img.youtube.com/vi/Mzs5k03noHs/maxresdefault.jpg"
- alt="The Wishing Well Of Heathenberry Forest narration">
-        <h3>The Wishing Well Of Heathenberry Forest</h3>
-        <p>Listen to the narrated story on Youtube.</p>
-    </div>
-
-    <div class="narration-item">
-        <a href="https://youtu.be/NxGLp8TEdP0?si=wqXZiR5wRsUltphj" target="_blank">
-            <img src="https://img.youtube.com/vi/NxGLp8TEdP0/maxresdefault.jpg"
- alt="Beyond The Ridge narration">
-        </a>
-        <h3>Beyond The Ridge</h3>
-        <p>Listen to the narrated story on YouTube.</p>
-    </div>
-
-    <div class="narration-item">
-        <a href="https://youtu.be/ZJsQ0FM5Zmg?si=8ND9FelJvit-QThZ" target="_blank">
-            <img src="https://img.youtube.com/vi/ZJsQ0FM5Zmg/maxresdefault.jpg"
- alt="The Cornfield narration">
-        </a>
-        <h3>The Cornfield</h3>
-        <p>Listen to the narrated story on YouTube.</p>
-    </div>
-
-    <div class="narration-item">
-        <a href="https://youtu.be/8Vy2QUUEMkA?si=ROIPXNS8Yap3Q-4Y" target="_blank">
-            <img src="https://img.youtube.com/vi/8Vy2QUUEMkA/maxresdefault.jpg"
- alt="Age Is Just a Number narration">
-        </a>
-        <h3>Age Is Just a Number</h3>
-        <p>Listen to the narrated story on YouTube.</p>
-    </div>
-
-</aside>
-
-
-<div class="homepage-right">
-
-    <section class="about-mollerhatte">
-
-        <button id="invertButton" type="button">INVERT COLORS</button>
-
-        <h2>ABOUT THE WEBSITE</h2>
-
-        <p class="mollerhatte-quote">
-
-"Noli timere mortuos, quia nocere non possunt. Time vivos, quia possunt."
-
-        </p>
-
-        <p>
-            This website was once the ambition of a budding, wide-eyed young writer in the 2000s who was a little naive, totally oblivious to the actual horrors of real life, and sometimes slightly too overconfident in his approach to finding the so-called “horror factors” that could be used and infused into his writing process.
-        </p>
-
-        <p>
-            <em>What makes a good horror story?</em> I have often asked myself that. This morbid fascination with the unknown has been crawling around in the dark corners of our minds since the first human walked the earth and began wondering whether there might be more to the world than meets the eye.
-        </p>
-
-        <p>
-            Fear has ruled our world since the first spark of consciousness took root in our minds. Fear of death, loneliness, darkness, disease, loss, and even the most insignificant embodiments of it are all there to remind us that it is deeply ingrained in us to seek comfort and safety.
-        </p>
-
-        <p>
-            And it was in the comfort and safety of my living room that most of the stories on this website first came to life in their earliest drafts. It is easy to scare yourself for fun when you are not in a position to be scared of anything.
-        </p>
-
-        <p>
-            For all the places my writing could go, the process rarely strays far from the realm of psychological realism. I tend to gravitate toward character-driven stories because I find that they create a more immersive and relatable sense of experience. Not to mention that sometimes the scariest and most disturbing things in life happen mostly inside your own head.
-        </p>
-
-        <p>
-            I hope these stories give you a really good scare, in the same way they did for me while I was writing them. Perhaps they will even make you look over your shoulder when you are alone in the middle of the night, only to laugh it off and think how lucky you are that you are not in one of them.
-        </p>
-
-        <p>
-            Good wishes,
-        </p>
-
-        <p>
-            Galman
-        </p>
-
-    </section>
-    <section class="publications-section">
-
-        <h2>PUBLICATIONS</h2>
-
-        <article>
-            <h3>Into The Mangrove Forest</h3>
-            <p class="publication">
-                Published by FearSome.
-            </p>
-            <p>
-                <a href="https://fearsomefiction.com/into-the-mangrove-forest/" target="_blank">
-Read on FearSome →
-
-</a>
-
+                <a href="index.html"
+                   style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; letter-spacing: 1.5px;">
+                    HOME
                 </a>
-            </p>
-        </article>
 
-        <article>
-            <h3>Marevynn Rise</h3>
-            <p class="publication">
-                Forthcoming in The Bleeding Margin.
-            </p>
-            <p class="publication">
-                Currently awaiting publication.
-            </p>
-        </article>
+                <a href="stories.html"
+                   style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; letter-spacing: 1.5px;">
+                    STORIES
+                </a>
 
-    </section>
-    <section class="news-section">
+                <a href="about.html"
+                   style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; letter-spacing: 1.5px;">
+                    ABOUT
+                </a>
 
-        <h2>NEWS &amp; ANNOUNCEMENTS</h2>
+                <a href="gallery.html"
+                   style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; letter-spacing: 1.5px;">
+                    GALLERY
+                </a>
 
-        <div class="book-announcement">
-
-           <img src="MOLLERHATTE BOOK COVER.png"
- alt="MÖLLERHATTÉ book cover">
-
-            <div class="book-announcement-text">
-
-                <h5>MÖLLERHATTÉ</h5>
-
-                <p class="publication">
-                    A collection of short horror stories.
-                </p>
-
-                <p>
-                    A physical collection of short horror stories is in development.
-
-                </p>
+                <a href="contact.html"
+                   style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.2; letter-spacing: 1.5px;">
+                    CONTACT
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+        <a href="index.html" class="header-logo">
+            <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+            <span>HORROR &amp; SPECULATIVE FICTION</span>
+        </a>
 
-    <section class="copyright-section">
+        <a href="contact.html" class="header-contact">CONTACT</a>
 
-<p> <h2>COPYRIGHT &amp; RIGHTS</h2>
+    </header>
 
-        <p>
-            Unless otherwise stated, all stories, written works, artwork, and original
-            content appearing on MÖLLERHATTÉ are the property of Galman Ferguson and are
-            protected by applicable copyright law.
-        </p>
+    <main>
 
-        <p>
-            No story or substantial portion of any story may be reproduced, republished,
-            distributed, translated, adapted, narrated, recorded, or otherwise used without
-            prior written permission from the copyright holder, except where such use is
-            permitted by applicable law.
-        </p>
+        <main>
 
-        <p>
-            The fact that a story is freely accessible online does not place it in the public
-            domain. Copyright protection applies to eligible works published digitally as
-            well as in print.
-        </p>
+            <div class="homepage-columns">
 
-        <p>
-            For permission to reproduce, adapt, narrate, publish, or otherwise use any work
-            appearing on this website, please contact the author.
-        </p>
+                <aside class="homepage-narration">
 
-        <p class="copyright-quote">
-            “Copyright protects the expression of an idea, not the idea itself.”
-        </p>
+                    <div class="story-search">
 
-        <p class="copyright-notice">
-            © 2026 Galman Ferguson. All rights reserved.
-        </p>
+                        <input type="text" id="storySearch" placeholder="Search for a story..." onkeydown="if (event.key === 'Enter') searchStory();">
 
-    </section>
+                        <button type="button" onclick="searchStory()">SEARCH</button>
 
-</div>
+                    </div>
 
-</div>
+                    <div class="scroll-indicator">
+                        <span class="big-arrow"></span>
+                        <span>Scroll Down Here</span>
 
+                        <div class="homepage-featured">
 
+                            <section class="featured-story" id="featured-stories">
 
+                                <h2>FEATURED STORIES &amp; NARRATIONS</h2>
 
-    <section id="about">
+                                <h3>
+                                    <a href="age-is-just-a-number.html">Age Is Just a Number</a>
+                                </h3>
 
-     <h2><a href="about.html">ABOUT</a></h2>
+                                <p>
+                                    A troubled photographer turns to an artificial intelligence companion for help with his loneliness,
+                                    only to discover that some truths are better left unknown.
+                                </p>
 
-        <p>
-            Galman Ferguson is a writer of horror and speculative
-            fiction. His work explores psychological horror,
-            folklore, cosmic unease, trauma, guilt, and the strange
-            things hiding beneath ordinary life.
-        </p>
+                                <p>
+                                    <a href="age-is-just-a-number.html">Read Age Is Just a Number →</a>
+                                </p>
 
-    </section>
+                                <h3>
+                                    <a href="blind-date.html">Blind Date</a>
+                                </h3>
 
+                                <p>
+                                    A mysterious stranger sits down with a troubled woman for a seemingly ordinary blind date,
+                                    but nothing about their meeting is quite what it seems.
+                                </p>
 
-    <section id="contact">
+                                <p>
+                                    <a href="blind-date.html">Read Blind Date →</a>
+                                </p>
 
-      <h2><a href="contact.html">CONTACT</a></h2>
+                                <h3>
+                                    <a href="the-wishing-well-of-heathenberry-forest.html">
+                                        The Wishing Well Of Heathenberry Forest
+                                    </a>
+                                </h3>
 
-        <p>
-            For writing, narration, and publication inquiries,
-            please get in touch.
-        </p>
+                                <p>
+                                    Deep within the forbidden Heathenberry Forest lies an ancient well surrounded by strange rules
+                                    and darker legends. One night, a young boy decides to find out for himself what lurks below.
+                                </p>
 
-    </section>
+                                <p>
+                                    <a href="the-wishing-well-of-heathenberry-forest.html">
+                                        Read The Wishing Well Of Heathenberry Forest →
+                                    </a>
+                                </p>
 
-</main>
+                                <div class="view-all-stories">
+                                    <a href="stories.html">VIEW ALL STORIES →</a>
+                                </div>
 
+                                <div class="narration-item">
+                                    <a href="https://youtu.be/I7tcVQQcvWk?si=6gjdEl22lYr4kjF9" target="_blank">
+                                        <img src="https://img.youtube.com/vi/I7tcVQQcvWk/maxresdefault.jpg"
+                                            alt="Into The Mangrove Forest narration">
+                                    </a>
+                                    <h3>Into The Mangrove Forest</h3>
+                                    <p>Listen to the narrated story on YouTube.</p>
+                                </div>
 
-<footer>
+                                <div class="narration-item">
+                                    <a href="https://youtu.be/Mzs5k03noHs?si=PXHTR_hX0NM6T5A8" target="_blank">
+                                        <img src="https://img.youtube.com/vi/Mzs5k03noHs/maxresdefault.jpg"
+                                            alt="The Wishing Well Of Heathenberry Forest narration">
+                                    </a>
+                                    <h3>The Wishing Well Of Heathenberry Forest</h3>
+                                    <p>Listen to the narrated story on Youtube.</p>
+                                </div>
 
-    <p>© 2026 Galman Ferguson</p>
+                                <div class="narration-item">
+                                    <a href="https://youtu.be/NxGLp8TEdP0?si=wqXZiR5wRsUltphj" target="_blank">
+                                        <img src="https://img.youtube.com/vi/NxGLp8TEdP0/maxresdefault.jpg"
+                                            alt="Beyond The Ridge narration">
+                                    </a>
+                                    <h3>Beyond The Ridge</h3>
+                                    <p>Listen to the narrated story on YouTube.</p>
+                                </div>
 
-</footer>
+                                <div class="narration-item">
+                                    <a href="https://youtu.be/ZJsQ0FM5Zmg?si=8ND9FelJvit-QThZ" target="_blank">
+                                        <img src="https://img.youtube.com/vi/ZJsQ0FM5Zmg/maxresdefault.jpg"
+                                            alt="The Cornfield narration">
+                                    </a>
+                                    <h3>The Cornfield</h3>
+                                    <p>Listen to the narrated story on YouTube.</p>
+                                </div>
 
-<script> function searchStory() { const searchInput = document.getElementById("storySearch"); const searchTerm = searchInput.value.trim().toLowerCase(); const stories = { "marevynn rise": "marevynn-rise.html", "into the mangrove forest": "into-the-mangrove-forest.html", "the taxi fare": "the-taxi-fare.html", "necrophobia": "necrophobia.html", "the wishing well of heathenberry forest": "the-wishing-well-of-heathenberry-forest.html", "back to ravensville": "back-to-ravensville.html", "beyond the ridge": "beyond-the-ridge.html", "the cornfield": "the-cornfield.html", "age is just a number": "age-is-just-a-number.html", "blind date": "blind-date.html" }; const matches = Object.keys(stories).filter(title => title.includes(searchTerm) ); if (matches.length === 1) { window.location.href = stories[matches[0]]; } else if (matches.length > 1) { alert("More than one story matches your search. Please be more specific."); } else { alert("Story not found."); } } const invertButton = document.getElementById("invertButton"); if (localStorage.getItem("invertColors") === "true") { document.body.classList.add("inverted"); } if (invertButton) { invertButton.textContent = document.body.classList.contains("inverted") ? "NORMAL COLORS" : "INVERT COLORS"; invertButton.addEventListener("click", function () { document.body.classList.toggle("inverted"); if (document.body.classList.contains("inverted")) { localStorage.setItem("invertColors", "true"); invertButton.textContent = "NORMAL COLORS"; } else { localStorage.setItem("invertColors", "false"); invertButton.textContent = "INVERT COLORS"; } }); } </script>
+                                <div class="narration-item">
+                                    <a href="https://youtu.be/8Vy2QUUEMkA?si=ROIPXNS8Yap3Q-4Y" target="_blank">
+                                        <img src="https://img.youtube.com/vi/8Vy2QUUEMkA/maxresdefault.jpg"
+                                            alt="Age Is Just a Number narration">
+                                    </a>
+                                    <h3>Age Is Just a Number</h3>
+                                    <p>Listen to the narrated story on YouTube.</p>
+                                </div>
+
+                            </section>
+
+                        </div>
+
+                </aside>
+
+                <div class="homepage-right">
+
+                    <section class="about-mollerhatte">
+
+                        <button id="invertButton" type="button">INVERT COLORS</button>
+
+                        <h2>ABOUT THE WEBSITE</h2>
+
+                        <p class="mollerhatte-quote">
+                            "Noli timere mortuos, quia nocere non possunt. Time vivos, quia possunt."
+                        </p>
+
+                        <p>
+                            This website was once the ambition of a budding, wide-eyed young writer in the 2000s who was a little naive, totally oblivious to the actual horrors of real life, and sometimes slightly too overconfident in his approach to finding the so-called “horror factors” that could be used and infused into his writing process.
+                        </p>
+
+                        <p>
+                            <em>What makes a good horror story?</em> I have often asked myself that. This morbid fascination with the unknown has been crawling around in the dark corners of our minds since the first human walked the earth and began wondering whether there might be more to the world than meets the eye.
+                        </p>
+
+                        <p>
+                            Fear has ruled our world since the first spark of consciousness took root in our minds. Fear of death, loneliness, darkness, disease, loss, and even the most insignificant embodiments of it are all there to remind us that it is deeply ingrained in us to seek comfort and safety.
+                        </p>
+
+                        <p>
+                            And it was in the comfort and safety of my living room that most of the stories on this website first came to life in their earliest drafts. It is easy to scare yourself for fun when you are not in a position to be scared of anything.
+                        </p>
+
+                        <p>
+                            For all the places my writing could go, the process rarely strays far from the realm of psychological realism. I tend to gravitate toward character-driven stories because I find that they create a more immersive and relatable sense of experience. Not to mention that sometimes the scariest and most disturbing things in life happen mostly inside your own head.
+                        </p>
+
+                        <p>
+                            I hope these stories give you a really good scare, in the same way they did for me while I was writing them. Perhaps they will even make you look over your shoulder when you are alone in the middle of the night, only to laugh it off and think how lucky you are that you are not in one of them.
+                        </p>
+
+                        <p>
+                            Good wishes,
+                        </p>
+
+                        <p>
+                            Galman
+                        </p>
+
+                    </section>
+
+                    <section class="publications-section">
+
+                        <h2>PUBLICATIONS</h2>
+
+                        <article>
+                            <h3>Into The Mangrove Forest</h3>
+
+                            <p class="publication">
+                                Published by FearSome.
+                            </p>
+
+                            <p>
+                                <a href="https://fearsomefiction.com/into-the-mangrove-forest/" target="_blank">
+                                    Read on FearSome →
+                                </a>
+                            </p>
+                        </article>
+
+                        <article>
+                            <h3>Marevynn Rise</h3>
+
+                            <p class="publication">
+                                Forthcoming in The Bleeding Margin.
+                            </p>
+
+                            <p class="publication">
+                                Currently awaiting publication.
+                            </p>
+                        </article>
+
+                    </section>
+
+                    <section class="news-section">
+
+                        <h2>NEWS &amp; ANNOUNCEMENTS</h2>
+
+                        <div class="book-announcement">
+
+                            <img src="MOLLERHATTE BOOK COVER.png"
+                                alt="MÖLLERHATTÉ book cover">
+
+                            <div class="book-announcement-text">
+
+                                <h5>MÖLLERHATTÉ</h5>
+
+                                <p class="publication">
+                                    A collection of short horror stories.
+                                </p>
+
+                                <p>
+                                    A physical collection of short horror stories is in development.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="copyright-section">
+
+                        <h2>COPYRIGHT &amp; RIGHTS</h2>
+
+                        <p>
+                            Unless otherwise stated, all stories, written works, artwork, and original
+                            content appearing on MÖLLERHATTÉ are the property of Galman Ferguson and are
+                            protected by applicable copyright law.
+                        </p>
+
+                        <p>
+                            No story or substantial portion of any story may be reproduced, republished,
+                            distributed, translated, adapted, narrated, recorded, or otherwise used without
+                            prior written permission from the copyright holder, except where such use is
+                            permitted by applicable law.
+                        </p>
+
+                        <p>
+                            The fact that a story is freely accessible online does not place it in the public
+                            domain. Copyright protection applies to eligible works published digitally as
+                            well as in print.
+                        </p>
+
+                        <p>
+                            For permission to reproduce, adapt, narrate, publish, or otherwise use any work
+                            appearing on this website, please contact the author.
+                        </p>
+
+                        <p class="copyright-quote">
+                            “Copyright protects the expression of an idea, not the idea itself.”
+                        </p>
+
+                        <p class="copyright-notice">
+                            © 2026 Galman Ferguson. All rights reserved.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <section id="about">
+
+                <h2><a href="about.html">ABOUT</a></h2>
+
+                <p>
+                    Galman Ferguson is a writer of horror and speculative
+                    fiction. His work explores psychological horror,
+                    folklore, cosmic unease, trauma, guilt, and the strange
+                    things hiding beneath ordinary life.
+                </p>
+
+            </section>
+
+            <section id="contact">
+
+                <h2><a href="contact.html">CONTACT</a></h2>
+
+                <p>
+                    For writing, narration, and publication inquiries,
+                    please get in touch.
+                </p>
+
+            </section>
+
+        </main>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 Galman Ferguson</p>
+
+    </footer>
+
+    <script>
+        function searchStory() {
+
+            const searchInput = document.getElementById("storySearch");
+            const searchTerm = searchInput.value.trim().toLowerCase();
+
+            const stories = {
+                "marevynn rise": "marevynn-rise.html",
+                "into the mangrove forest": "into-the-mangrove-forest.html",
+                "the taxi fare": "the-taxi-fare.html",
+                "necrophobia": "necrophobia.html",
+                "the wishing well of heathenberry forest": "the-wishing-well-of-heathenberry-forest.html",
+                "back to ravensville": "back-to-ravensville.html",
+                "beyond the ridge": "beyond-the-ridge.html",
+                "the cornfield": "the-cornfield.html",
+                "age is just a number": "age-is-just-a-number.html",
+                "blind date": "blind-date.html"
+            };
+
+            const matches = Object.keys(stories).filter(title =>
+                title.includes(searchTerm)
+            );
+
+            if (matches.length === 1) {
+                window.location.href = stories[matches[0]];
+            } else if (matches.length > 1) {
+                alert("More than one story matches your search. Please be more specific.");
+            } else {
+                alert("Story not found.");
+            }
+        }
+    </script>
+
+    <script>
+        const invertButton = document.getElementById("invertButton");
+
+        if (localStorage.getItem("invertColors") === "true") {
+            document.body.classList.add("inverted");
+        }
+
+        if (invertButton) {
+            invertButton.textContent =
+                document.body.classList.contains("inverted")
+                    ? "NORMAL COLORS"
+                    : "INVERT COLORS";
+
+            invertButton.addEventListener("click", function () {
+                document.body.classList.toggle("inverted");
+
+                if (document.body.classList.contains("inverted")) {
+                    localStorage.setItem("invertColors", "true");
+                    invertButton.textContent = "NORMAL COLORS";
+                } else {
+                    localStorage.setItem("invertColors", "false");
+                    invertButton.textContent = "INVERT COLORS";
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("headerDropdown");
+            menu.classList.toggle("show");
+        }
+    </script>
 
 </body>
 
