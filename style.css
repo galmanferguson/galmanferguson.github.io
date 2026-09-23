@@ -430,6 +430,7 @@ text-align: center;
 
 .featured-story p {
 text-align: justify;
+font-weight: normal;
 }
 
 /* MAREVYNN */
@@ -546,6 +547,7 @@ text-align: center;
 
 .homepage-featured .featured-story p {
 text-align: justify;
+font-weight: normal;
 }
 
 .homepage-featured .featured-story {
