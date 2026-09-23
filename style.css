@@ -1197,6 +1197,46 @@ body.inverted .story-logo img {
     display: block;
 }
 
+/* STAGGERED DROPDOWN SLIDE-DOWN */
+
+.header-dropdown.show a {
+    opacity: 0;
+    transform: translateY(-18px);
+    animation: menuItemSlideDown 0.35s ease forwards;
+}
+
+.header-dropdown.show a:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.header-dropdown.show a:nth-child(2) {
+    animation-delay: 0.14s;
+}
+
+.header-dropdown.show a:nth-child(3) {
+    animation-delay: 0.23s;
+}
+
+.header-dropdown.show a:nth-child(4) {
+    animation-delay: 0.32s;
+}
+
+.header-dropdown.show a:nth-child(5) {
+    animation-delay: 0.41s;
+}
+
+@keyframes menuItemSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* COMPACT HEADER */
 
 .top-header.compact {
