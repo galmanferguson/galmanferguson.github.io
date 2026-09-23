@@ -9,21 +9,35 @@
 
 <body>
 
-<header>
+<header class="top-header">
 
-    <a href="index.html">
-        <img class="site-logo" src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+    <div class="header-menu-container">
+
+        <button class="header-menu" type="button" onclick="toggleMenu()">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>MENU</span>
+        </button>
+
+        <div class="header-dropdown" id="headerDropdown">
+            <a href="index.html">HOME</a>
+            <a href="stories.html">STORIES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="header-logo">
+        <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        <span>HORROR &amp; SPECULATIVE FICTION</span>
     </a>
 
-    <div class="tagline">HORROR &amp; SPECULATIVE FICTION</div>
-
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="stories.html">STORIES</a>
-        <a href="about.html">ABOUT</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
+    <a href="contact.html" class="header-contact">CONTACT</a>
 
 </header>
 
@@ -688,13 +702,34 @@
     <a href="stories.html">Back to Stories</a>
     <a href="blind-date.html">Next Story →</a>
 
-    </section>
+    </nav>
 
 </main>
 
 <footer>
     © 2026 Galman Ferguson. All rights reserved.
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("headerDropdown");
+    menu.classList.toggle("show");
+}
+
+const topHeader = document.querySelector(".top-header");
+
+function updateHeaderSize() {
+    if (window.scrollY === 0) {
+        topHeader.classList.remove("compact");
+    } else {
+        topHeader.classList.add("compact");
+    }
+}
+
+window.addEventListener("scroll", updateHeaderSize);
+
+updateHeaderSize();
+</script>
 
 <script>
 const invertButton = document.getElementById("invertButton");
