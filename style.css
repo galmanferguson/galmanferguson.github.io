@@ -369,14 +369,18 @@ font-size: 12px;
 
 @media (max-width: 600px) {
 
-header {
-    padding: 50px 15px 30px;
-}
+    body {
+        padding-top: 200px;
+    }
 
-h1 {
-    font-size: 32px;
-    letter-spacing: 5px;
-}
+    header {
+        padding: 50px 15px 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
 
 .site-logo {
     width: 160px;
