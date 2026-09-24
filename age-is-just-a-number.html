@@ -716,19 +716,7 @@ function toggleMenu() {
     menu.classList.toggle("show");
 }
 
-const topHeader = document.querySelector(".top-header");
 
-function updateHeaderSize() {
-    if (window.scrollY === 0) {
-        topHeader.classList.remove("compact");
-    } else {
-        topHeader.classList.add("compact");
-    }
-}
-
-window.addEventListener("scroll", updateHeaderSize);
-
-updateHeaderSize();
 </script>
 
 <script>
