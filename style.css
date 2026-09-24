@@ -129,6 +129,7 @@ font-size: 17px;
 .publication {
 font-size: 14px !important;
 color: #777777 !important;
+    text-align: center;
 }
 
 /* IMAGES */
