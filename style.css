@@ -1816,12 +1816,13 @@ body.inverted .homepage-bottom p {
 }@media (max-width: 700px) {
     .homepage-bottom {
         width: 100%;
-        max-width: 100%;
+      min-width: 0;
+max-width: none;
         margin: 50px auto;
         display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
-        padding: 0 20px;
+    padding: 0;
         box-sizing: border-box;
     }
 
