@@ -82,6 +82,11 @@
 
 </main>
 
+<div class="gallery-lightbox" id="galleryLightbox">
+    <button class="gallery-lightbox-close" id="galleryLightboxClose" type="button">&times;</button>
+    <img id="galleryLightboxImage" src="" alt="">
+</div>
+
 <footer>
     © 2026 Galman Ferguson. All rights reserved.
 </footer>
@@ -91,7 +96,6 @@ function toggleMenu() {
     const menu = document.getElementById("headerDropdown");
     menu.classList.toggle("show");
 }
-
 </script>
 
 <script>
@@ -119,6 +123,37 @@ if (invertButton) {
         }
     });
 }
+</script>
+
+<script>
+const galleryImages = document.querySelectorAll(".gallery img");
+const galleryLightbox = document.getElementById("galleryLightbox");
+const galleryLightboxImage = document.getElementById("galleryLightboxImage");
+const galleryLightboxClose = document.getElementById("galleryLightboxClose");
+
+galleryImages.forEach(function (image) {
+    image.addEventListener("click", function () {
+        galleryLightboxImage.src = image.src;
+        galleryLightboxImage.alt = image.alt;
+        galleryLightbox.classList.add("show");
+    });
+});
+
+galleryLightboxClose.addEventListener("click", function () {
+    galleryLightbox.classList.remove("show");
+});
+
+galleryLightbox.addEventListener("click", function (event) {
+    if (event.target === galleryLightbox) {
+        galleryLightbox.classList.remove("show");
+    }
+});
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        galleryLightbox.classList.remove("show");
+    }
+});
 </script>
 
 </body>
