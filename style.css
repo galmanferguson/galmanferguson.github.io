@@ -1813,4 +1813,28 @@ body.inverted .homepage-bottom p {
         max-width: 100%;
         margin: 0;
     }
+}@media (max-width: 700px) {
+    .homepage-bottom {
+        width: 100%;
+        max-width: 100%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .homepage-bottom section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .homepage-bottom h2 {
+        text-align: center;
+    }
+
+    .homepage-bottom p {
+        text-align: justify;
+    }
 }
