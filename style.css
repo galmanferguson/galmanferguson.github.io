@@ -1794,4 +1794,23 @@ body.inverted .homepage-bottom p {
         margin: 0 auto;
         box-sizing: border-box;
     }
+}@media (max-width: 700px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .homepage-main {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .homepage-columns {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
 }
