@@ -1737,4 +1737,53 @@ body.inverted .homepage-bottom p {
     .homepage-main {
         background-attachment: scroll;
     }
+}.gallery img {
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+.gallery-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 5000;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.gallery-lightbox.show {
+    display: flex;
+}
+
+.gallery-lightbox img {
+    max-width: 95%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #555555;
+}
+
+.gallery-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 5001;
+}
+
+.gallery-lightbox-close:hover {
+    color: #aaaaaa;
 }
