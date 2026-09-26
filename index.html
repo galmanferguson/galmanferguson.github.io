@@ -404,8 +404,268 @@
                     </h3>
 
                     <p>
-                        A young woman returns to her hometown and discovers that an old local legend
-                        may be far more than a story told to frighten children.
+                        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stories | Galman Ferguson</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="top-header">
+
+    <div class="header-menu-container">
+
+        <button class="header-menu" type="button" onclick="toggleMenu()">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>MENU</span>
+        </button>
+
+        <div class="header-dropdown" id="headerDropdown">
+            <a href="index.html">HOME</a>
+            <a href="stories.html">STORIES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="header-logo">
+        <img src="Picsart_25-07-14_00-37-41-230.png" alt="MÖLLERHATTÉ">
+        <span>HORROR &amp; SPECULATIVE FICTION</span>
+    </a>
+
+    <a href="contact.html" class="header-contact">CONTACT</a>
+
+</header>
+
+
+<main id="stories">
+
+    <button id="invertButton" type="button">INVERT COLORS</button>
+
+    <h2>STORIES</h2>
+
+
+    <article>
+        <h3>
+            <a href="marevynn-rise.html">Marevynn Rise (Coming Soon)</a>
+        </h3>
+
+        <p>
+            A lonely inn stands above the Northern Sea.
+            Some guests arrive carrying more than luggage.
+        </p>
+
+        <p class="publication">
+            Published in <em>The Bleeding Margin</em>
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="into-the-mangrove-forest.html">Into the Mangrove Forest</a>
+        </h3>
+
+        <p>
+            Deep inside a mangrove forest, a journey takes
+            an increasingly disturbing turn.
+        </p>
+
+        <p class="publication">
+            Published by FearSome
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="the-taxi-fare.html">The Taxi Fare</a>
+        </h3>
+
+        <p>
+            A taxi driver picks up a mysterious passenger on a dangerous country road,
+            but the fare turns out to be more than either man expected.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="necrophobia.html">Necrophobia</a>
+        </h3>
+
+        <p>
+            A young woman working the night shift at a funeral home discovers
+            that some things are not as dead as they seem.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="the-wishing-well-of-heathenberry-forest.html">
+                The Wishing Well Of Heathenberry Forest
+            </a>
+        </h3>
+
+        <p>
+            Deep within the forbidden Heathenberry Forest lies an ancient well surrounded by strange rules and darker legends. One night, a young boy decides to find out for himself what lurks below.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="back-to-ravensville.html">Back To Ravensville (Coming Soon)</a>
+        </h3>
+
+        <p>
+            After ten years away, Marcus returns to Ravensville following his father's death
+            and reconnects with his estranged twin brother, Jonah. A camping trip into the
+            woods soon forces the brothers to confront a past neither of them has truly escaped.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="beyond-the-ridge.html">Beyond The Ridge</a>
+        </h3>
+
+        <p>
+            A search team enters a remote mountain forest to investigate a decades-old mystery,
+            only to discover that some places are better left unexplored.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="the-cornfield.html">The Cornfield</a>
+        </h3>
+
+        <p>
+            A young farmer spends his first night guarding the family cornfield deep in the mountains of Sulawesi.
+            But something in the surrounding forest seems to be watching.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="age-is-just-a-number.html">Age Is Just a Number</a>
+        </h3>
+
+        <p>
+            A troubled photographer turns to an artificial intelligence companion for help with his loneliness,
+            only to discover that some truths are better left unknown.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="blind-date.html">Blind Date</a>
+        </h3>
+
+        <p>
+            A mysterious stranger sits down with a troubled woman for a seemingly ordinary blind date,
+            but nothing about their meeting is quite what it seems.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="bon-appetit.html">BON APPÉTIT!</a>
+        </h3>
+
+        <p>
+            A quiet old woman living alone looks back on a disturbing encounter from her childhood, only to find the past returning in an unexpected way.
+        </p>
+    </article>
+
+
+    <article>
+        <h3>
+            <a href="the-red-lady-of-wyrhmhill.html">The Red Lady of Wyrhmhill</a>
+        </h3>
+
+        <p>
+            A strange woman with fiery red hair lives alone atop Wyrmhill, where the townspeople
+            whisper that she is a witch. When a bullied boy flees into the hills during a storm,
+            his desperate wishes may finally be heard.
+        </p>
+    </article>
+
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Galman Ferguson</p>
+
+</footer>
+
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("headerDropdown");
+    menu.classList.toggle("show");
+}
+</script>
+
+
+<script>
+const invertButton = document.getElementById("invertButton");
+
+if (localStorage.getItem("invertColors") === "true") {
+    document.body.classList.add("inverted");
+}
+
+if (invertButton) {
+    invertButton.textContent =
+        document.body.classList.contains("inverted")
+            ? "NORMAL COLORS"
+            : "INVERT COLORS";
+
+    invertButton.addEventListener("click", function () {
+        document.body.classList.toggle("inverted");
+
+        if (document.body.classList.contains("inverted")) {
+            localStorage.setItem("invertColors", "true");
+            invertButton.textContent = "NORMAL COLORS";
+        } else {
+            localStorage.setItem("invertColors", "false");
+            invertButton.textContent = "INVERT COLORS";
+        }
+    });
+}
+</script>
+
+
+</body>
+
+</html>
                     </p>
 
                 </div>
