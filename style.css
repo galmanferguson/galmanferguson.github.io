@@ -1733,4 +1733,8 @@ body.inverted .homepage-bottom p {
     color: #222222;
 }footer {
     border-top: none;
+}@media (max-width: 700px) {
+    .homepage-main {
+        background-attachment: scroll;
+    }
 }
