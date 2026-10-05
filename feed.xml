@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom">
 
     <channel>
 
         <title>Möllerhatté — Horror &amp; Speculative Fiction</title>
 
         <link>https://galmanferguson.github.io/</link>
+
+        <atom:link href="https://galmanferguson.github.io/feed.xml"
+                   rel="self"
+                   type="application/rss+xml" />
 
         <description>New horror and speculative fiction stories by Galman Ferguson.</description>
 
@@ -14,66 +19,77 @@
         <item>
             <title>MEMORY OF THE SAVANNAH</title>
             <link>https://galmanferguson.github.io/memory-of-the-savannah.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/memory-of-the-savannah.html</guid>
             <description>A late-night drive along a notorious highway takes a disturbing turn when a stranded couple offers a glimpse into something that should have remained forgotten.</description>
         </item>
 
         <item>
             <title>The Red Lady of Wyrmhill</title>
             <link>https://galmanferguson.github.io/the-red-lady-of-wyrmhill.html</link>
-            <description>A strange encounter on a lonely road leads to a disturbing discovery buried in the history of Wyrmhill.</description>
+            <guid isPermaLink="true">https://galmanferguson.github.io/the-red-lady-of-wyrmhill.html</guid>
+            <description>A strange encounter on a lonely road takes a disturbing turn.</description>
         </item>
 
         <item>
             <title>BON APPÉTIT!</title>
             <link>https://galmanferguson.github.io/bon-appetit.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/bon-appetit.html</guid>
             <description>A seemingly ordinary meal takes a dark and unexpected turn.</description>
         </item>
 
         <item>
             <title>Blind Date</title>
             <link>https://galmanferguson.github.io/blind-date.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/blind-date.html</guid>
             <description>A blind date takes an unsettling turn.</description>
         </item>
 
         <item>
             <title>Age Is Just a Number</title>
             <link>https://galmanferguson.github.io/age-is-just-a-number.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/age-is-just-a-number.html</guid>
             <description>Some things are not quite what they seem when it comes to age.</description>
         </item>
 
         <item>
             <title>The Cornfield</title>
             <link>https://galmanferguson.github.io/the-cornfield.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/the-cornfield.html</guid>
             <description>A seemingly ordinary cornfield hides something deeply disturbing.</description>
         </item>
 
         <item>
             <title>Beyond The Ridge</title>
             <link>https://galmanferguson.github.io/beyond-the-ridge.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/beyond-the-ridge.html</guid>
             <description>Beyond the ridge lies something that should never have been found.</description>
         </item>
 
         <item>
             <title>The Wishing Well Of Heathenberry Forest</title>
             <link>https://galmanferguson.github.io/the-wishing-well-of-heathenberry-forest.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/the-wishing-well-of-heathenberry-forest.html</guid>
             <description>A wishing well hidden deep in the forest holds a terrible secret.</description>
         </item>
 
         <item>
             <title>Necrophobia</title>
             <link>https://galmanferguson.github.io/necrophobia.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/necrophobia.html</guid>
             <description>A fear of the dead becomes something much more disturbing.</description>
         </item>
 
         <item>
             <title>The Taxi Fare</title>
             <link>https://galmanferguson.github.io/the-taxi-fare.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/the-taxi-fare.html</guid>
             <description>One late-night taxi ride comes with a fare that no passenger could have expected.</description>
         </item>
 
         <item>
             <title>Into the Mangrove Forest</title>
             <link>https://galmanferguson.github.io/into-the-mangrove-forest.html</link>
+            <guid isPermaLink="true">https://galmanferguson.github.io/into-the-mangrove-forest.html</guid>
             <description>A journey into a mangrove forest becomes a descent into something ancient and terrifying.</description>
         </item>
 
