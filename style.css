@@ -1240,7 +1240,7 @@ color: #666666 !important;
 
 body.inverted footer {
 border-color: #cccccc;
-color: #666666;
+color: #0A0A0A;
 }
 
 body.inverted .about-mollerhatte,
@@ -1636,7 +1636,7 @@ filter: invert(1);
 }
 
 body.inverted .header-logo span {
-color: #777777;
+color: #0A0A0A;
 }
 
 body.inverted .header-dropdown {
