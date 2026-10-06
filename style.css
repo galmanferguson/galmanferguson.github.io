@@ -421,6 +421,49 @@ font-family: Arial, sans-serif;
 font-size: 12px;
 }
 
+/* ROCKY TEXTURE FOR TOP AND BOTTOM BARS */
+
+.top-header,
+footer {
+background-color: #000000;
+background-image:
+linear-gradient(
+rgba(0, 0, 0, 0.75),
+rgba(0, 0, 0, 0.75)
+),
+url("rockytexture.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* KEEP HEADER AND FOOTER CONTENT ABOVE TEXTURE */
+
+.top-header > *,
+footer > * {
+position: relative;
+z-index: 2;
+}
+
+/* INVERTED ROCKY TEXTURE */
+
+body.inverted .top-header,
+body.inverted footer {
+background-color: #ffffff;
+background-image:
+linear-gradient(
+rgba(255, 255, 255, 0.75),
+rgba(255, 255, 255, 0.75)
+),
+url("rockytexture.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+filter: invert(1);
+}
+
+
+
 /* MOBILE */
 @media (max-width: 600px) {
 
@@ -1325,6 +1368,48 @@ transition:
 height 0.45s ease,
 padding 0.45s ease;
 }
+
+/* ROCKY TEXTURE FOR TOP AND BOTTOM BARS */
+
+.top-header,
+footer {
+background-color: #000000;
+background-image:
+linear-gradient(
+rgba(0, 0, 0, 0.75),
+rgba(0, 0, 0, 0.75)
+),
+url("rockytexture.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* KEEP HEADER AND FOOTER CONTENT ABOVE TEXTURE */
+
+.top-header > *,
+footer > * {
+position: relative;
+z-index: 2;
+}
+
+/* INVERTED ROCKY TEXTURE */
+
+body.inverted .top-header,
+body.inverted footer {
+background-color: #ffffff;
+background-image:
+linear-gradient(
+rgba(255, 255, 255, 0.75),
+rgba(255, 255, 255, 0.75)
+),
+url("rockytexture.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+filter: invert(1);
+}
+
 
 .header-menu-container {
 position: relative;
