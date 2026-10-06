@@ -553,7 +553,7 @@ text-align: justify;
 }
 
 .mollerhatte-quote {
-text-align: center !important;
+text-align: justified !important;
 font-size: 15px !important;
 font-style: italic;
 color: #888888 !important;
