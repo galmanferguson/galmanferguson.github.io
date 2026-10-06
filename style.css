@@ -414,11 +414,15 @@ opacity: 1;
 /* FOOTER */
 footer {
 text-align: center;
-padding: 60px 20px;
-border-top: 1px solid #333333;
-color: #666666;
+height: 120px;
+padding: 0 20px;
+border-top: none;
+color: #ffffff;
 font-family: Arial, sans-serif;
 font-size: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 /* MOBILE */
@@ -1326,6 +1330,28 @@ height 0.45s ease,
 padding 0.45s ease;
 }
 
+/* ROCKY TEXTURE BACKGROUND */
+
+.top-header,
+footer {
+    background-color: #000000;
+    background-image: url("rockytexture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* INVERTED MODE */
+
+body.inverted .top-header,
+body.inverted footer {
+    background-color: #ffffff;
+    background-image: url("rockytexture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .header-menu-container {
 position: relative;
 z-index: 4000;
@@ -1432,7 +1458,7 @@ transform: translateY(3px);
 font-family: Arial, sans-serif;
 font-size: 14px;
 letter-spacing: 2px;
-color: #777777;
+color: #ffffff;
 white-space: nowrap;
 transition:
 font-size 0.45s ease,
@@ -1751,6 +1777,28 @@ color: #222222;
 
 footer {
 border-top: none;
+}
+
+/* ROCKY TEXTURE BACKGROUND */
+
+.top-header,
+footer {
+    background-color: #000000;
+    background-image: url("rockytexture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* INVERTED MODE */
+
+body.inverted .top-header,
+body.inverted footer {
+    background-color: #ffffff;
+    background-image: url("rockytexture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 700px) {
@@ -2089,5 +2137,3 @@ border-color: #cccccc;
     width: 100%;
 }
 
-
-}
